@@ -26,20 +26,20 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About the project
-We put out a model that can recognise the collection of papers contained in a pdf or image made up of numerous documents. To accomplish this, the input PDF is divided into individual pages. The CNN model is used to categorise each page into the appropriate document category. After that, each document's data is extracted using OCR (optical character recognition). This is being recommended for five documents: voter identification, driver's licence, PAN, and Aadhar. Except for the front and back of the same document, the input pdf must include a single document on a single page.
+We put out a model that can recognize the collection of papers contained in a PDF or image made up of numerous documents. To accomplish this, the input PDF is divided into individual pages. The CNN model is used to categorize each page into the appropriate document category. After that, each document's data is extracted using OCR (optical character recognition). This is being recommended for five documents: voter identification, driver's license, PAN, and Aadhar. Except for the front and back of the same document, the input PDF must include a single document on a single page.
 Initially, our data classification model achieved an accuracy of 0.7342 on the training set and 0.7736 on the validation set, with gains of 0.6923 and losses of 0.8340.
 
-In our ongoing efforts to enhance performance, we explored research papers and discovered VGG16 and VGG19 models. Hyperparameter tuning was applied to our model, incorporating additional layers to the pre-tuned models. As a result, we achieved a validation loss of 0.3677 and validation accuracy of 0.8769 for VGG16.
+In our ongoing efforts to enhance performance, we explored and discovered VGG16 and VGG19 models. Hyperparameter tuning was applied to our model, incorporating additional layers to the pre-trained models. As a result, we achieved a validation loss of 0.3677 and a validation accuracy of 0.8769 for VGG16.
 
 In addition to this, we incorporated two more features:
 
-##### Read Aloud:
+#### Read Aloud:
 * Utilizes text-to-speech technology for accessibility.
 * Translates text into spoken words.
 * Supports auditory learners and those with visual impairments.
 * Enhances accessibility and consumability.
 
-##### Document Summarization:
+#### Document Summarization:
 * Aids time-constrained users by condensing lengthy papers.
 * Uses Hugging Face Transformers library for NLP models.
 * Provides clear and instructive document synopses.
@@ -65,18 +65,26 @@ Originally, we implemented horizontal and vertical data augmentation through ran
 
 
 ### Document Classification Model
+## CNN model
 <img width="555" alt="image" src="https://user-images.githubusercontent.com/87893594/224973161-2513f1f7-0291-41ed-9b79-c14ef2578882.png">
 
-Various hyperparameters like the number of layers, neurons in each layer, number of filters, kernel size, value of p in dropout layers, number of epochs, batch size, etc. were changed until satisfactory training and validation accuracy was achieved.
+Various hyperparameters like the number of layers, neurons in each layer, number of filters, kernel size, the value of p in dropout layers, number of epochs, batch size, etc. were changed until satisfactory training and validation accuracy was achieved.
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/87893594/224972235-be7435d0-1f11-4c38-8ab6-6958fcb3bb83.png">
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/87893594/224972374-4244b1b6-418d-4364-8fea-77a05450ca19.png">
 
 
-### The final Model and results
+### CNN Model results
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/87893594/224972133-8bf9642b-d16e-4880-b017-161c61d8f247.png">
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/87893594/224972187-cd7f5c48-95d7-42fa-a187-bfd84344e903.png">
+
+## VGG16
+<img width="555" alt="image" src="https://github.com/kanikakj/Document-Interaction-Assistant/assets/77913500/fbddf1d3-b20a-487e-b570-015f92cdbe7f">
+
+additional layers were incorporated into the pre-trained model.
+
+<img width="500" alt="image" src="https://github.com/kanikakj/Document-Interaction-Assistant/assets/77913500/b02cc9d3-4b49-4063-b0f5-d1087ef19ff4">
 
 
 ### Information extraction model
@@ -90,5 +98,4 @@ Following are the steps of OCR done on images:
 
 ### Team
 - Kanika Kanojia [GitHub](https://github.com)        [Linkedin](https://www.linkedin.com/in/kanika-kanojia-348620207/) 
-- Deepali Thakur [GitHub](https://github.com/deepalii05) [Linkedin](https://www.linkedin.com/in/deepali-thakur/)
 - Princy Singhal [GitHub](https://github.com/PrincySinghal) [Linkedin](https://www.linkedin.com/in/princy-singhal-047414224/)
