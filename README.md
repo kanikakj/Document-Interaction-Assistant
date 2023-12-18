@@ -33,13 +33,13 @@ In our ongoing efforts to enhance performance, we explored and discovered VGG16 
 
 In addition to this, we incorporated two more features:
 
-#### Read Aloud:
+#### 1. Read Aloud:
 * Utilizes text-to-speech technology for accessibility.
 * Translates text into spoken words.
 * Supports auditory learners and those with visual impairments.
 * Enhances accessibility and consumability.
 
-#### Document Summarization:
+#### 2. Document Summarization:
 * Aids time-constrained users by condensing lengthy papers.
 * Uses Hugging Face Transformers library for NLP models.
 * Provides clear and instructive document synopses.
